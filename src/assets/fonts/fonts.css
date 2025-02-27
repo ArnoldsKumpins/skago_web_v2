@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'jost-medium';
+    src: url('@/assets/fonts/jost.medium.ttf') format('ttf');
+    font-weight: medium;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'jost-light';
+    src: url('@/assets/fonts/jost.light.ttf') format('ttf');
+    font-weight: light;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'jost-book';
+    src: url('@/assets/fonts/jost.book.ttf') format('ttf');
+    font-weight: 350;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'jost-bold';
+    src: url('@/assets/fonts/jost.bold.ttf') format('ttf');
+    font-weight: bold;
+    font-style: normal;
+}
+  

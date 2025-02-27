@@ -1,0 +1,72 @@
+/* Default opacity is 50%, transitions to 100% on hover/active */
+.icon-link {
+    opacity: 0.5;
+    transition: opacity 0.2s ease;
+
+    &:hover,
+    &:active {
+        opacity: 1;
+    }
+}
+
+/* Center menu items and add dividers when collapsed */
+.nav-link-item {
+    text-align: center;
+    padding: 0.5rem 0;
+    width: 100%;
+}
+
+/* Prevent long text from wrapping */
+.nowrap-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    /* Optional: adds "..." if text is too long */
+}
+
+/* Prevent navbar items from wrapping */
+.b-navbar-nav {
+    flex-wrap: nowrap !important;
+    min-width: 0;
+    /* Ensures flex shrinking works */
+}
+
+.navbar-links-desktop-gap .nav-link-item {
+    margin-right: 0;
+    /* No spacing on mobile */
+}
+
+
+@media (max-width: 767px) {
+    .ml-auto {
+        flex-direction: row !important;
+        /* Forces row layout in mobile */
+        gap: 1rem;
+        /* Adds spacing between icons */
+    }
+
+    #nav-collapse {
+        border-top: 1px solid rgba(0, 0, 0, 1) !important;
+        /* Adds a border between navbar and content */
+    }
+}
+
+/* Increase navbar padding/margin for desktop screens */
+@media (min-width: 768px) {
+    .navbar-desktop-spacing {
+        margin-left: 6rem !important;
+        margin-right: 6rem !important;
+    }
+
+    .navbar-links-desktop-gap .nav-link-item:not(:last-child) {
+        margin-right: 4rem;
+        /* Adds spacing only in desktop mode */
+    }
+}
+
+@media (min-width: 1200px) {
+    .navbar-desktop-spacing {
+        margin-left:15rem !important;
+        margin-right:15rem !important;
+    }
+}

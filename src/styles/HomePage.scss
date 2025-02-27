@@ -1,0 +1,42 @@
+@import "./_variables.scss";
+// =========================================================================
+// VARIABLES & MIXINS
+// =========================================================================
+
+// Mixin for mobile devices (max-width: 767px)
+@mixin mobile {
+    @media (max-width: $breakpoint-mobile) {
+        @content;
+    }
+}
+
+// Mixin for tablet and up (min-width: 768px)
+@mixin tablet {
+    @media (min-width: $breakpoint-tablet) {
+        @content;
+    }
+}
+
+// Mixin for desktop and up (min-width: 1200px)
+@mixin desktop {
+    @media (min-width: $breakpoint-desktop) {
+        @content;
+    }
+}
+
+// =========================================================================
+// BASE STYLES
+// =========================================================================
+
+
+
+// =========================================================================
+// COMPONENT-SPECIFIC STYLES
+// =========================================================================
+
+#container-section-1 {
+    background-image:
+        radial-gradient(circle 400px at 300px -40px, $white 0%, rgba(26, 118, 188, 0.1) 10%, rgba(26, 118, 188, 0.25) 40%, rgba(26, 118, 188, 0.1) 80%, $white 100%);
+    height: 100vh;
+    width: auto;
+}
