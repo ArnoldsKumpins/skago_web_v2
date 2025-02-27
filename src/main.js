@@ -19,4 +19,4 @@ const app = createApp(App)
 app.use(BootstrapVue3)
 app.mount('#app')
 
-// 27.02 1:50h + 40min
+// 27.02 6:30h
