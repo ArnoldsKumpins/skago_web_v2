@@ -1,3 +1,5 @@
+@import "./variables.scss";
+
 /* Default opacity is 50%, transitions to 100% on hover/active */
 .icon-link {
     opacity: 0.5;
@@ -36,6 +38,23 @@
     /* No spacing on mobile */
 }
 
+.primary-button {
+    background-color: $primary;
+    font-weight: 300;
+    font-size: 1.1rem;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: .8rem;
+    border: none;
+    
+    padding: .5rem 1rem;
+
+    @media (max-width: 767px) {
+        margin: 1rem 0;
+    }
+}
+
 
 @media (max-width: 767px) {
     .ml-auto {
@@ -45,17 +64,13 @@
         /* Adds spacing between icons */
     }
 
-    #nav-collapse {
-        border-top: 1px solid rgba(0, 0, 0, 1) !important;
-        /* Adds a border between navbar and content */
-    }
 }
 
 /* Increase navbar padding/margin for desktop screens */
 @media (min-width: 768px) {
     .navbar-desktop-spacing {
-        margin-left: 6rem !important;
-        margin-right: 6rem !important;
+        margin-left: $margin-x-tablet !important;
+        margin-right: $margin-x-tablet !important;
     }
 
     .navbar-links-desktop-gap .nav-link-item:not(:last-child) {
@@ -66,7 +81,7 @@
 
 @media (min-width: 1200px) {
     .navbar-desktop-spacing {
-        margin-left:15rem !important;
-        margin-right:15rem !important;
+        margin-left: $margin-x-desktop !important;
+        margin-right: $margin-x-desktop !important;
     }
 }

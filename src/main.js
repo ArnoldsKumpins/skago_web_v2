@@ -10,7 +10,7 @@ import 'bootstrap-vue-3/dist/bootstrap-vue-3.css'
 import 'bootstrap-icons/font/bootstrap-icons.css';
 
 
-import '@/assets/fonts/fonts.css';
+import '@/styles/fonts.scss';
 import "@/styles/global.scss";
 
 
@@ -18,3 +18,5 @@ import "@/styles/global.scss";
 const app = createApp(App)
 app.use(BootstrapVue3)
 app.mount('#app')
+
+// 27.02 1:50h + 40min
