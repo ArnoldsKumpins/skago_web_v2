@@ -9,3 +9,15 @@ body {
 }
 
 
+.transparent-modal .modal-content {
+    background-color: transparent !important;
+    border: none;
+    box-shadow: none;
+    width: auto;
+    margin: 0 auto;
+}
+
+/* Optionally remove modal body padding */
+.transparent-modal .modal-body {
+    padding: 0;
+}

@@ -1,8 +1,5 @@
 <template>
-  <b-navbar
-    toggleable="md"
-    class="mx-4 my-0 py-3 navbar-desktop-spacing"
-  >
+  <b-navbar toggleable="md" class="mx-4 my-0 py-3 navbar-desktop-spacing">
     <!-- Logo on the left -->
     <b-navbar-brand to="/">
       <img :src="logo" alt="Skago Logo" height="30" />
@@ -19,12 +16,9 @@
 
     <!-- Collapsible content -->
     <b-collapse id="nav-collapse" is-nav>
-
       <!-- Submit button on the right -->
-      <b-navbar-nav
-        class="ms-auto d-flex align-items-center"
-      >
-        <b-button class="primary-button">Pieteikties</b-button>
+      <b-navbar-nav class="ms-auto d-flex align-items-center">
+        <b-button class="primary-button" @click="toggleModal">Pieteikties</b-button>
       </b-navbar-nav>
     </b-collapse>
   </b-navbar>
@@ -39,6 +33,11 @@ export default {
       logo: require("@/assets/images/skago_logo.svg"),
       isCollapsed: false,
     };
+  },
+  methods: {
+    toggleModal() {
+      this.$emit("toggleModal");
+    },
   },
 };
 </script>

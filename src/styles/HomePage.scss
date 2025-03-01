@@ -61,6 +61,20 @@
     }
 }
 
+.section-3 {
+    @include mobile {
+        margin: 0 $margin-x-mobile;
+    }
+
+    @include tablet {
+        margin: 0 $margin-x-tablet;
+    }
+
+    @include desktop {
+        margin: 0 $margin-x-desktop;
+    }
+}
+
 .text-content {
     color: $black;
     text-align: left;
@@ -189,6 +203,50 @@
         margin-bottom: 20px;
     }
 }
+
+.supplementary-content {
+    margin: 0;
+    background-image: url('@/assets/images/checkered_background.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.blurry-background {
+    /* Semi-transparent */
+    backdrop-filter: blur(5px);
+    border-radius: 1rem;
+    padding: 20px;
+    text-align: left;
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 700 !important;
+        text-decoration: underline;
+    }
+
+    p {
+        font-size: 1.1rem;
+        font-weight: 400;
+        margin: 0 0 1rem 0;
+        line-height: 1.2rem;
+    }
+}
+
+
+/* Optional: style for the logo images if needed */
+.logo-image {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 80%;
+    height: 1em;
+    margin: 0 4px;
+}
+
+.blur-background {
+    filter: blur(5px);
+}
+
+
 
 // =========================================================================
 // COMPONENT-SPECIFIC STYLES
